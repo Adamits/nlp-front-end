@@ -1,15 +1,27 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "name": "adamits",
+  "description": "adamits",
+  "main": "",
+  "authors": [
+    "Adam <ajwieme@gmail.com>"
+  ],
   "license": "MIT",
-  "private": true,
+  "homepage": "https://github.com/adamits/nlp-front-end",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "angular": "~1.4.0",
-    "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "html5-boilerplate": "~5.2.0"
+    "angular-route": "~1.4.0",
+    "package": "^0.1.2",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1"
   }
 }

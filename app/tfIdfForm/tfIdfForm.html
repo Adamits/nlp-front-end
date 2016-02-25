@@ -1,0 +1,50 @@
+<div class="terms-container container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div ng-controller="TfIdfFormCtrl">
+        <form novalidate class="simple-form">
+          <div class="what-is-this" data-toggle="modal" data-target="#explanation-modal">
+            What the heck is this?
+          </div>
+          <div class="document-title">
+            <input type="text" name="[document][title]" class="document-input" placeholder="Title of your document" >
+          </div>
+          <div class="document-content">
+            <textarea rows="8" name="[document][content]" class="document-input" placeholder="Enter some content to extract terms from..."></textarea>
+          </div>
+          <div class="document-collection">
+            <select name="[document][collection_name]" class="document-select">
+              <option value="" disabled selected>Choose a category for your document</option>
+              <option value="test">test</option>
+              <option value="adam">adam</option>
+              <option value="boyos">boyos</option>
+              <option value="rules">rules</option>
+            </select>
+          </div>
+          <input type="submit" class="btn btn-primary btn-block document-submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="explanation-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">What the heck is this?</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            This is a simple app to interface with an API that implements a tf-idf algorithm whose goal is to extract the most relevant, or important terms from a text document. You can paste your text into the form, provide a title, and optionally choose a category that you think best represents your document. After submitting, you will receive a list of the n most important terms.
+          </p>
+          <p>
+            Check <a href="/app/#/about" onclick="$('#explanation-modal').modal('hide')">this page</a> out for an explanation of how it works, and what happens to your docuent.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
